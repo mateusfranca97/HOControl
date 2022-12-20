@@ -1,0 +1,15 @@
+C:\Users\matee\OneDrive\Documentos\GitHub\dotNet\HOCrud\HOCrud\bin\Debug\net6.0\HOCrud.exe
+C:\Users\matee\OneDrive\Documentos\GitHub\dotNet\HOCrud\HOCrud\bin\Debug\net6.0\HOCrud.deps.json
+C:\Users\matee\OneDrive\Documentos\GitHub\dotNet\HOCrud\HOCrud\bin\Debug\net6.0\HOCrud.runtimeconfig.json
+C:\Users\matee\OneDrive\Documentos\GitHub\dotNet\HOCrud\HOCrud\bin\Debug\net6.0\HOCrud.dll
+C:\Users\matee\OneDrive\Documentos\GitHub\dotNet\HOCrud\HOCrud\bin\Debug\net6.0\HOCrud.pdb
+C:\Users\matee\OneDrive\Documentos\GitHub\dotNet\HOCrud\HOCrud\obj\Debug\net6.0\HOCrud.csproj.AssemblyReference.cache
+C:\Users\matee\OneDrive\Documentos\GitHub\dotNet\HOCrud\HOCrud\obj\Debug\net6.0\HOCrud.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matee\OneDrive\Documentos\GitHub\dotNet\HOCrud\HOCrud\obj\Debug\net6.0\HOCrud.AssemblyInfoInputs.cache
+C:\Users\matee\OneDrive\Documentos\GitHub\dotNet\HOCrud\HOCrud\obj\Debug\net6.0\HOCrud.AssemblyInfo.cs
+C:\Users\matee\OneDrive\Documentos\GitHub\dotNet\HOCrud\HOCrud\obj\Debug\net6.0\HOCrud.csproj.CoreCompileInputs.cache
+C:\Users\matee\OneDrive\Documentos\GitHub\dotNet\HOCrud\HOCrud\obj\Debug\net6.0\HOCrud.dll
+C:\Users\matee\OneDrive\Documentos\GitHub\dotNet\HOCrud\HOCrud\obj\Debug\net6.0\refint\HOCrud.dll
+C:\Users\matee\OneDrive\Documentos\GitHub\dotNet\HOCrud\HOCrud\obj\Debug\net6.0\HOCrud.pdb
+C:\Users\matee\OneDrive\Documentos\GitHub\dotNet\HOCrud\HOCrud\obj\Debug\net6.0\HOCrud.genruntimeconfig.cache
+C:\Users\matee\OneDrive\Documentos\GitHub\dotNet\HOCrud\HOCrud\obj\Debug\net6.0\ref\HOCrud.dll
