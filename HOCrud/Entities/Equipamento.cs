@@ -6,10 +6,17 @@
         public string TipoDoEquipamento { get; set; }
         public string Modelo { get; set; }
         public string Marca { get; set; }
-        public Usuario usuario { get; set; }
+        public Usuario usuario { get; private set; }
+
+        public override string ToString()
+        {
+            return  $"\n    Ativo: {Ativo}" +
+                    $"\n    Tipo do Equipamento: {TipoDoEquipamento}" +
+                    $"\n    Modelo: {Modelo}";
+        }
+
         public Equipamento()
         {
-
         }
 
         public Equipamento(string ativo, string tipoDoEquipamento, string modelo, string marca)
@@ -19,6 +26,7 @@
             Modelo = modelo;
             Marca = marca;
         }
+
     }
 }
 

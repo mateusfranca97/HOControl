@@ -11,8 +11,8 @@ namespace HOCrud.Entities
         public string Telefone { get; set; }
         public string Cargo { get; set; }
         public string Operacao { get; set; }
-
-        public Collection<Equipamento> equipamento { get; set; }
+        public Equipamento Monitor { get; set; }
+        public Equipamento Desktop { get; set; }
 
         public override string ToString()
         {
@@ -22,7 +22,12 @@ namespace HOCrud.Entities
                 $"\nCEP: {Cep}" +
                 $"\nTelefone: {Telefone}" +
                 $"\nOperação: {Operacao}" +
-                $"\nCargo: {Cargo}";
+                $"\nCargo: {Cargo}" +
+                $"\n---------------------" +
+                $"\nDesktop: {Desktop}" +
+                $"\nMonitor: {Monitor}";
+
+
         }
 
         public Usuario()
@@ -30,7 +35,7 @@ namespace HOCrud.Entities
 
         }
 
-        public Usuario(string matricula, string name, string cep, string telefone, string operacao, string cargo)
+        public Usuario(string matricula, string name, string cep, string telefone, string operacao, string cargo, Equipamento monitor)
         {
             Matricula = matricula;
             Name = name;
@@ -38,9 +43,8 @@ namespace HOCrud.Entities
             Telefone = telefone;
             Operacao = operacao;
             Cargo = cargo;
-            this.equipamento = equipamento;
+            Monitor = new Equipamento();
+            Desktop = new Equipamento();
         }
-
-
     }
 }
