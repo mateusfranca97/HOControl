@@ -19,23 +19,24 @@ namespace HOCrud.Entities
             return
                 $"\nMatricula: {Matricula}" +
                 $"\nNome: {Name}" +
-                $"\nCEP: {Cep}" +
                 $"\nTelefone: {Telefone}" +
+                $"\nCEP: {Cep}" +
                 $"\nOperação: {Operacao}" +
                 $"\nCargo: {Cargo}" +
                 $"\n---------------------" +
                 $"\nDesktop: {Desktop}" +
                 $"\nMonitor: {Monitor}";
-
-
         }
 
-        public Usuario()
-        {
-
-        }
-
-        public Usuario(string matricula, string name, string cep, string telefone, string operacao, string cargo, Equipamento monitor)
+        public Usuario(
+            string matricula, 
+            string name, 
+            string cep, 
+            string telefone, 
+            string operacao, 
+            string cargo, 
+            Equipamento monitor, 
+            Equipamento desktop)
         {
             Matricula = matricula;
             Name = name;
@@ -43,8 +44,18 @@ namespace HOCrud.Entities
             Telefone = telefone;
             Operacao = operacao;
             Cargo = cargo;
-            Monitor = new Equipamento();
-            Desktop = new Equipamento();
+            Monitor = new Equipamento(monitor.Ativo, monitor.TipoDoEquipamento, monitor.Modelo, monitor.Marca);
+            Desktop = new Equipamento(desktop.Ativo, desktop.TipoDoEquipamento, desktop.Modelo, desktop.Marca);
+        }
+
+        public Usuario(string matricula, string name, string cep, string telefone, string operacao, string cargo)
+        {
+            Matricula = matricula;
+            Name = name;
+            Cep = cep;
+            Telefone = telefone;
+            Operacao = operacao;
+            Cargo = cargo;
         }
     }
 }

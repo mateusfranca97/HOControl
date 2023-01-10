@@ -15,10 +15,6 @@
                     $"\n    Modelo: {Modelo}";
         }
 
-        public Equipamento()
-        {
-        }
-
         public Equipamento(string ativo, string tipoDoEquipamento, string modelo, string marca)
         {
             Ativo = ativo;
@@ -27,6 +23,9 @@
             Marca = marca;
         }
 
+        public Equipamento()
+        {
+        }
     }
 }
 
