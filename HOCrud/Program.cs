@@ -1,6 +1,5 @@
 ﻿using HOCrud.Entities;
 
-
 internal class Program
 {
     private static void Main(string[] args)
@@ -38,6 +37,30 @@ internal class Program
                         new Equipamento("A000001", "DESKTOP", "DELL 3080", "DELL"),
                         new Equipamento("A000002", "MONITOR", "BR25A32", "DELL")
                     );
+
+                   Usuario usuario2 = new Usuario
+                   (
+                       matricula: "281358",
+                       name: "Mateus Gomes de França",
+                       cep: "50920110",
+                       telefone: "81982082488",
+                       operacao: "TI",
+                       cargo: "Analista de TI Jr",
+                       new Equipamento("A000001", "DESKTOP", "DELL 3080", "DELL"),
+                       new Equipamento("A000002", "MONITOR", "BR25A32", "DELL")
+                   );
+
+                   Usuario usuario3 = new Usuario
+                   (
+                       matricula: "301528",
+                       name: "Mateus Gomes de França",
+                       cep: "50920110",
+                       telefone: "81982082488",
+                       operacao: "TI",
+                       cargo: "Analista de TI Jr",
+                       new Equipamento("A000001", "DESKTOP", "DELL 3080", "DELL"),
+                       new Equipamento("A000002", "MONITOR", "BR25A32", "DELL")
+                   );
 
                     //Console.Write("Matricula: ");
                     //string matricula = Console.ReadLine();
@@ -88,19 +111,31 @@ internal class Program
                     //Usuario usuario = new Usuario(matricula,name,cep,telefone,operacao,cargo, monitor, desktop);
 
                     OperadorList.Add(usuario);
+                    OperadorList.Add(usuario2);
+                    OperadorList.Add(usuario3);
                     break;
                 case 2:
                     Console.WriteLine();
                     Console.WriteLine("DELETAR SAIDA");
-                    Console.WriteLine(OperadorList.Count);
-                    if (OperadorList.Count != 0)
-                    {
-                        OperadorList.RemoveAt(0);
+                    Console.Write("Informe a matricula: ");
+                    string UserDeleted = Console.ReadLine();
+
+                    var query = from _usuario in OperadorList where _usuario.Matricula.Contains(UserDeleted) select _usuario;
+
+                    
+                    foreach (var matricula in query)
+                    { 
+                        Console.WriteLine(matricula);
                     }
-                    else
-                    {
-                        Console.WriteLine("A lista está vazia.\n\n");
-                    }
+
+                    //if (OperadorList.Count != 0)
+                    //{
+                    //    OperadorList.RemoveAt(0);
+                    //}
+                    //else
+                    //{
+                    //    Console.WriteLine("A lista está vazia.\n\n");
+                    //}
                     Console.WriteLine("");
                     break;
                 case 3:
@@ -110,7 +145,7 @@ internal class Program
                     {
                         foreach (var item in OperadorList)
                         {
-                            Console.WriteLine(item);
+                            Console.WriteLine(item.Matricula);
                             Console.WriteLine("\n");
                         }
                     }
